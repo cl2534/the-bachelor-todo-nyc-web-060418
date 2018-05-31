@@ -45,7 +45,7 @@ def get_average_age_for_season(data, season)
   seasons = data[season]
   count = 0
   seasons.each do |characteristics|
-    counter += characteristics["age"].to_f
+    count += characteristics["age"].to_f
   end
   count = count / seasons.length
   return count.round
