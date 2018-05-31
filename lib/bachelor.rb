@@ -42,11 +42,11 @@ def get_occupation(data, hometown)
 end
 
 def get_average_age_for_season(data, season)
-  season = data[season]
+  seasons = data[season]
   count = 0
-  season.each do |characteristics|
+  seasons.each do |characteristics|
     counter += characteristics["age"].to_f
   end
-  count = count / season.length
+  count = count / seasons.length
   return count.round
 end
