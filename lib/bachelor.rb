@@ -48,5 +48,5 @@ def get_average_age_for_season(data, season)
     count += characteristics["age"].to_f
   end
   count = count / seasons.length
-  return count.floor 
+  return count.round  
 end
